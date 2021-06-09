@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    --Dark_cyan: hsl(185, 75%, 39%);
+    --Very_dark_desaturated_blue: #2d3248;
+    --Dark_grayish_blue: hsl(227, 10%, 46%);
+}
+
+body {
+    background-color: var(--Dark_cyan);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+#bg-top {
+    position: absolute;
+    top: -65%;
+    left: -14%;
+}
+
+#bg-bottom {
+    position: absolute;
+    top: 50%;
+    right: -14%;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 354px;
+    height: 375px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.header img {
+    width: 100%;
+}
+
+.circle {
+    position: absolute;
+    top: 90px;
+    left: 120px;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    background: white;
+}
+
+.circle img {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 97px;
+    height: 97px;
+    border-radius: 50%;
+}
+
+.nameage {
+    position: absolute;
+    top: 58%;
+    left: 110px;
+    align-items: center;
+    text-align: center;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    ;
+}
+
+.age {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.london {
+    margin-top: 13px;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.footer {
+    position: absolute;
+    top: 78%;
+    width: 100%;
+    border-top: 1px solid var(--Dark_grayish_blue);
+}
+
+.footcontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 20px 40px 20px 40px;
+}
+
+.last {
+    font-size: 10px;
+    color: #2d3248;
+    letter-spacing: 2px;
+    margin-top: 7px;
+    opacity: 1;
+}
+
+h3 {
+    color: #2d3248;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (max-width:375px) {
+    body {
+        overflow: hidden;
+        max-width: 100%;
+    }
+    .back {
+        width: 100%;
+        overflow: hidden;
+    }
+    #bg-top {
+        position: absolute;
+        top: -30%;
+        left: -60%;
+        width: 400px;
+    }
+    #bg-bottom {
+        position: absolute;
+        top: 70%;
+        left: 45%;
+        width: 200px;
+    }
+    .attribution {
+        justify-content: space-between;
+        position: fixed;
+        left: 50%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .back {
+        width: 100%;
+    }
+    .container {
+        position: fixed;
+        align-items: center;
+    }
+    .attribution {
+        position: fixed;
+        bottom: 0%;
+    }
+    #bg-bottom {}
+}
